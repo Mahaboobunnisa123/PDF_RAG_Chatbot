@@ -1,5 +1,6 @@
 # ENHANCED PDF RAG CHATBOT: A RETRIEVAL-AUGMENTED GENERATION SYSTEM USING GOOGLE GEMINI AND FAISS
 📄 PDF Knowledge Assistant (RAG Chatbot)
+
 A Streamlit-based PDF RAG chatbot where users can upload one or multiple PDFs, build a vector index, and ask questions to get grounded answers with source/page references.
 
 🚀 What it does

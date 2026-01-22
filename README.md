@@ -2,16 +2,16 @@
 📄 PDF Knowledge Assistant (RAG Chatbot)
 ## A Streamlit-based PDF RAG chatbot where users can upload one or multiple PDFs, build a vector index, and ask questions to get grounded answers with source/page references.
 
-🚀 What it does
-1.Upload text-based PDFs (selectable text)
-2.Builds embeddings using SentenceTransformers
-3.Stores and searches using FAISS
-4.Answers questions using Gemini API
-5.Shows top source chunks + page numbers
-6.Warns users if the PDF looks scanned/image-based (OCR not enabled)
+🚀 What it does: 
+Upload text-based PDFs (selectable text),
+Builds embeddings using SentenceTransformers,
+Stores and searches using FAISS,
+Answers questions using Gemini API,
+Shows top source chunks + page numbers,
+Warns users if the PDF looks scanned/image-based (OCR not enabled).
 
 🧠 Why I built this: 
-# To create a practical “chat with your PDFs” assistant that is fast, simple to use, and avoids hallucinations by answering only from retrieved document context.
+## To create a practical “chat with your PDFs” assistant that is fast, simple to use, and avoids hallucinations by answering only from retrieved document context.
 
 🛠 Tech Stack:
 Python,
@@ -31,11 +31,11 @@ GOOGLE_API_KEY = "YOUR_KEY_HERE"
 streamlit run app.py
 
 ✅ Notes / Limitations
-1. Works best with text-readable PDFs
-2. Scanned PDFs may not work well because OCR is not enabled
-3. Similarity threshold and Top-K can be tuned from the sidebar[Best: Top-K = 5, Threshold = 0.15/0.16/0.20]
+- Works best with text-readable PDFs
+- Scanned PDFs may not work well because OCR is not enabled
+- Similarity threshold and Top-K can be tuned from the sidebar[Best: Top-K = 5, Threshold = 0.15/0.16/0.20]
 
-📌 Features I’m proud of:
+📌 Features I’m proud of
 - Clean UI + chat history + export chat
 - Confidence checks to avoid random answers
 - Source citations (file name + page + similarity score)

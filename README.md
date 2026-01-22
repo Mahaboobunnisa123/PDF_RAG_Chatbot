@@ -10,14 +10,14 @@ Answers questions using Gemini API
 Shows top source chunks + page numbers
 Warns users if the PDF looks scanned/image-based (OCR not enabled)
 
-🧠 Why I built this
+🧠 Why I built this: 
 To create a practical “chat with your PDFs” assistant that is fast, simple to use, and avoids hallucinations by answering only from retrieved document context.
 
-🛠 Tech Stack
-Python
-Streamlit (UI)
-FAISS (vector search)
-SentenceTransformers (embeddings)
+🛠 Tech Stack:
+Python,
+Streamlit (UI),
+FAISS (vector search),
+SentenceTransformers (embeddings),
 LangChain Google GenAI (Gemini)
 
 📦 Setup (Local)
@@ -31,9 +31,9 @@ GOOGLE_API_KEY = "YOUR_KEY_HERE"
 streamlit run app.py
 
 ✅ Notes / Limitations
-Works best with text-readable PDFs
-Scanned PDFs may not work well because OCR is not enabled
-Similarity threshold and Top-K can be tuned from the sidebar[Best: Top-K = 5, Threshold = 0.15/0.16/0.20]
+1. Works best with text-readable PDFs
+2. Scanned PDFs may not work well because OCR is not enabled
+3. Similarity threshold and Top-K can be tuned from the sidebar[Best: Top-K = 5, Threshold = 0.15/0.16/0.20]
 
 📌 Features I’m proud of
 Clean UI + chat history + export chat

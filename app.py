@@ -12,13 +12,6 @@ from vector_store import create_or_load_store
 from rag_chain import rag_answer
 # Page config
 st.set_page_config(page_title="PDF RAG Assistant", layout="wide", initial_sidebar_state="expanded")
-if "APP_PASSWORD" in st.secrets:
-    pw = st.text_input("Enter password to access the app", type="password")
-    if pw != st.secrets["APP_PASSWORD"]:
-        st.warning("Wrong password")
-        st.stop()
-
-
 # ------------------ CUSTOM CSS ------------------
 CUSTOM_CSS = """
 <style>
@@ -219,5 +212,6 @@ if st.session_state.messages:
                     chat_txt.append(f"- {s.get('source')} | page {s.get('page')} | score {float(s.get('score') or 0.0):.3f}\n")
             chat_txt.append("-" * 60 + "\n")
     st.download_button("Export chat (.txt)", data="".join(chat_txt).encode("utf-8"), file_name="chat_history.txt")
+
 
 

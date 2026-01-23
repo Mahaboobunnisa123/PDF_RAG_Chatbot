@@ -53,7 +53,7 @@ with st.sidebar:
     st.header("Settings")
     top_k = st.slider("Top-K chunks to return", 3, 10, 5)
     threshold = st.slider("Similarity threshold", 0.10, 0.90, 0.20, step=0.01)
-    st.info("Please set Top-K chunks=5, threshold= 0.15/0.16/0.20 for better results")
+    st.info("Please set Top-K chunks=8, threshold= 0.15/0.16/0.20 for better results")
     force_rebuild = st.checkbox("Force rebuild index (re-embed PDFs)", value=False)
     advanced_mode = st.checkbox("Advanced Mode (reranker, slower on CPU)", value=False)
 
@@ -212,6 +212,7 @@ if st.session_state.messages:
                     chat_txt.append(f"- {s.get('source')} | page {s.get('page')} | score {float(s.get('score') or 0.0):.3f}\n")
             chat_txt.append("-" * 60 + "\n")
     st.download_button("Export chat (.txt)", data="".join(chat_txt).encode("utf-8"), file_name="chat_history.txt")
+
 
 
 

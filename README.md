@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="assets/RAG.jpeg" width="100%" alt="GitHub Banner"/>
+</p>
+
+---
+
 # ENHANCED PDF RAG CHATBOT: A RETRIEVAL-AUGMENTED GENERATION SYSTEM USING LANGCHAIN AND FAISS
 📄 PDF Knowledge Assistant (RAG Chatbot)
 ## A Streamlit-based PDF RAG chatbot where users can upload one or multiple PDFs, build a vector index, and ask questions to get grounded answers with source/page references.

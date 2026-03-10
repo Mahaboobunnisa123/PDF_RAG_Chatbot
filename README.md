@@ -7,6 +7,7 @@
 # ENHANCED PDF RAG CHATBOT: A RETRIEVAL-AUGMENTED GENERATION SYSTEM USING LANGCHAIN AND FAISS
 📄 PDF Knowledge Assistant (RAG Chatbot)
 ## A Streamlit-based PDF RAG chatbot where users can upload one or multiple PDFs, build a vector index, and ask questions to get grounded answers with source/page references.
+Demo: https://drive.google.com/file/d/1FCID0_AZsBk-GosD5JzA1PF705j5Ou7M/view?usp=sharing
 
 🚀 What it does: 
 Upload text-based PDFs (selectable text),
@@ -45,3 +46,6 @@ streamlit run app.py
 - Clean UI + chat history + export chat
 - Confidence checks to avoid random answers
 - Source citations (file name + page + similarity score)
+
+Contact me for the app link
+Email: mahboobunnisa885@gmail.com

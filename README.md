@@ -9,7 +9,7 @@
 ## A Streamlit-based PDF RAG chatbot where users can upload one or multiple PDFs, build a vector index, and ask questions to get grounded answers with source/page references.
 Demo: https://drive.google.com/file/d/1FCID0_AZsBk-GosD5JzA1PF705j5Ou7M/view?usp=sharing
 
-🚀 What it does: 
+### 🚀 What it does: 
 Upload text-based PDFs (selectable text),
 Builds embeddings using SentenceTransformers,
 Stores and searches using FAISS,
@@ -17,8 +17,8 @@ Answers questions using Gemini API,
 Shows top source chunks + page numbers,
 Warns users if the PDF looks scanned/image-based (OCR not enabled).
 
-🧠 Why I built this: 
-## To create a practical “chat with your PDFs” assistant that is fast, simple to use, and avoids hallucinations by answering only from retrieved document context.
+### 🧠 Why I built this: 
+#### To create a practical “chat with your PDFs” assistant that is fast, simple to use, and avoids hallucinations by answering only from retrieved document context.
 
 🛠 Tech Stack:
 Python,
@@ -42,7 +42,7 @@ streamlit run app.py
 - Scanned PDFs may not work well because OCR is not enabled
 - Similarity threshold and Top-K can be tuned from the sidebar[Best: Top-K = 5, Threshold = 0.15/0.16/0.20]
 
-📌 Features I’m proud of
+#### 📌 Features I’m proud of
 - Clean UI + chat history + export chat
 - Confidence checks to avoid random answers
 - Source citations (file name + page + similarity score)
